@@ -28,6 +28,7 @@ dependencies {
     implementation("org.flywaydb:flyway-mysql:${flyway_version}") {
         exclude group: 'org.slf4j'
     }
+    implementation "net.logstash.logback:logstash-logback-encoder:${logstash_version}"
 
     testImplementation "org.springframework.boot:spring-boot-starter-test"
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junit_version}"
