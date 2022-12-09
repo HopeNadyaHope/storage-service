@@ -30,6 +30,8 @@ dependencies {
     }
     implementation "net.logstash.logback:logstash-logback-encoder:${logstash_version}"
     implementation "org.springframework.cloud:spring-cloud-starter-sleuth:${sleuth_version}"
+    implementation "org.springframework.boot:spring-boot-starter-security"
+    implementation "org.keycloak:keycloak-spring-boot-starter:20.0.1"
 
     testImplementation "org.springframework.boot:spring-boot-starter-test"
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junit_version}"

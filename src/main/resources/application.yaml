@@ -29,3 +29,10 @@ logstash:
   host: ${LOGSTASH_HOST:localhost}
   port: ${LOGSTASH_PORT:5000}
   queue-size: 512
+
+keycloak:
+  realm: MicroservicesRealm
+  auth-server-url: http://${KEYCLOAK_HOST:localhost}:${KEYCLOAK_PORT:8180}/auth
+  resource: storage-service
+  use-resource-role-mappings: true
+  bearer-only: true
